@@ -1,20 +1,20 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");;
-        int a = 100; //сумма на счете
-        int b = 1200; //сколько положили на счет
-        int c =b/100; //бонусы
-        int d = a+c; //общая сумма на счету
+        int InitialMoney = 100; //изначальная сумма на счете
+        int money = 1200; //сколько денег положили на счет
+        int bonus =money/100; //бонусы
+        int sum = InitialMoney+bonus; //общая сумма на счету
 
-        if (b > 1000) {
+        if (money > 1000) {
             System.out.println("Вам начислен балл - ");
-            System.out.println(c);
+            System.out.println(bonus);
             System.out.println("У вас на счету ");
-            System.out.println(d);
+            System.out.println(sum);
         } else {
-            boolean b1 = b < 1000;
+            boolean b1 = money < 1000;
             System.out.println("Вам начислен балл - 0");
-            System.out.println("У вас на счету " + a);
+            System.out.println("У вас на счету " + InitialMoney);
         }
 
 
